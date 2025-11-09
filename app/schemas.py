@@ -21,7 +21,7 @@ class ItemInDBBase(ItemBase):
     id: int
 
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 
 class Item(ItemInDBBase):
